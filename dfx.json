@@ -1,0 +1,16 @@
+{
+    "canisters": {
+        "litpad_wallet": {
+            "type": "azle",
+            "main": "src/index.ts",
+            "declarations": {
+                "output": "test/dfx_generated/hello_world",
+                "node_compatibility": true
+            },
+            "candid": "src/index.did",
+            "build": "node_modules/.bin/azle compile litpad_wallet",
+            "wasm": ".azle/litpad_wallet/litpad_wallet.wasm",
+            "gzip": true
+        }
+    }
+}
